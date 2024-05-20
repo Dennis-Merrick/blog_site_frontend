@@ -1,0 +1,282 @@
+/* nav.css */
+body{
+  margin:0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+/* .nav-image img{
+  background-color: yellow;
+  height: 40px;
+} */
+.blog-name{
+  margin-left:45px
+}
+.blog-1 {
+  color: rgb(147, 4, 4);
+  font-size: 40px;
+  margin-top: -5px;
+}
+
+.blog-2 {
+  color: rgb(147, 4, 4);
+  font-size: 38px;
+  margin-top: 5px; 
+}
+
+.blog-3 {
+  color: rgb(147, 4, 4);
+  font-size: 36px;
+  margin-top: 10px; 
+}
+
+.blog-4 {
+  font-size: 34px;
+  margin-top: -3px;
+}
+
+.blog-5 {
+  color: rgb(147, 4, 4);
+  font-size: 32px;
+  margin-top: -5px;
+}
+
+.blog-6 {
+  font-size: 30px;
+  margin-top: 5px; 
+}
+
+.blog-7 {
+  font-size: 28px;
+  margin-top: 10px; 
+}
+
+.blog-8 {
+  color: rgb(147, 4, 4);
+  font-size: 26px;
+  margin-top: 15px; 
+}
+
+
+.nav {
+  color: rgb(189, 189, 189);
+}
+
+.container {
+  background-color: #112020; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  margin: 0 auto;
+  padding: 0 5px;
+z-index: 1000; 
+height:60px;
+position:fixed;
+}
+
+.blog-name {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.blog-name span {
+  margin-right: 2px;
+}
+
+.link-names {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.link-hover:hover{
+  color: rgb(147, 4, 4);
+  text-decoration: underline;
+  cursor:pointer
+}
+.link-hover.active{
+background-color: rgb(147, 4, 4);
+}
+
+.link-names span{
+  margin:10px;
+}
+.drop-icons {
+  padding:0;
+  margin-top: 5px;
+  height: 10px;
+  width:auto;
+}
+.drop-icons:hover{
+  color:green;
+}
+.search-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-input input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  color: #333;
+}
+
+
+.user-auth button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(147, 4, 4);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-auth button:hover {
+  background-color: #ff4500;
+}
+
+.first-droplist {
+  position: absolute;
+  top: 60px; /* Adjust based on your navbar height */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 999;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.first-droplist ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.first-droplist li {
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.first-droplist li:hover {
+  background-color: #555;
+}
+
+
+
+/* margin: top right bottom left; */
+/* Sidebar */
+.login-page{
+  background-color: red;
+  width:300px;
+  height:10px;
+  position:absolute;
+  margin: 200px 0px 0px 600px;
+}
+.sidebar {
+  background-color: #011a1ae8; /* Dark slate gray */
+  padding: 20px;
+  border-right: 1px solid black;
+  height: 100%; /* Full-height */
+  position: fixed; /* Fix the sidebar */
+  left: 0;
+  overflow-y: auto; /* Scrollable */
+  z-index: 900; /* Ensure it stays below other elements like the navbar */
+  color: white; /* White text for better visibility */
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.bio {
+  font-size: 18px;
+  color: white;
+}
+
+.social-icons a {
+  margin: 0 5px;
+color:rgba(147, 4, 4, 0.938);
+  font-size: 24px;
+}
+.search-bar{
+  margin-right:10px;
+}
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.categories, .recent-posts, .newsletter-signup {
+  margin-bottom: 20px;
+}
+
+.categories ul, .recent-posts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.categories ul li, .recent-posts ul li {
+  margin: 10px 0;
+
+}
+
+.categories ul li a, .recent-posts ul li a {
+  text-decoration: none;
+  color: rgb(172, 169, 169);
+  transition: color 0.3s ease;
+}
+
+.categories ul li a:hover, .recent-posts ul li a:hover {
+  color: #ff6347;
+}
+
+.newsletter-signup input {
+  width: calc(100% - 22px); /* Adjust for padding and border */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.sidebar-forms button{
+  margin-bottom: 20px;
+  background-color: rgb(147, 4, 4);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+  padding: 5px 10px;
+}
+.sidebar-forms button:hover {
+  background-color: #ff4500;
+}
